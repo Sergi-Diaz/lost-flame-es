@@ -1,6 +1,8 @@
 # Lost Flame en español
 
-Traducción no oficial de Lost Flame al español. Incluye textos, nombres, descripciones, menús y compatibilidad con tildes y ñ. Requiere tener instalado el juego de Steam.
+Traducción no oficial de Lost Flame al español. Incluye textos, nombres, descripciones, menús y compatibilidad con tildes y ñ. Requiere tener instalado el juego de Steam: https://store.steampowered.com/app/856570/Lost_Flame/
+
+La traducción se ha realizado con uso de GPT y revisión a mano de montones de casuísticas o nombres peculiares, obviamente es una traducción no profesional y puede haber errores, tenlo en cuenta. 
 
 ## Instalación en Windows
 
@@ -48,7 +50,7 @@ Los respaldos se guardan en `~/.local/share/lost-flame-es/respaldos`. En Linux s
 
 La versión 0.9.8 cubre los textos inventariados y se ha probado durante varias partidas en Linux. Todavía pueden aparecer textos o nombres en inglés en avisos generados por el juego. Para comunicar un fallo, abre una [incidencia](https://github.com/Sergi-Diaz/lost-flame-es/issues) con una captura, la frase, dónde aparece, el sistema operativo y la versión del juego y del parche.
 
-Se busca un español natural y breve, adecuado al tono del juego. Se conserva «parry» y se usa «Traslación» para blink. Los nombres propios se mantienen cuando corresponde. El glosario está en `traduccion/glosario.json`.
+He tratado de usar un español natural y breve, adecuado al tono del juego, aunque en ocasiones he tirado de tenido que tirar de libertad creativa, pero muy pocas. Se conserva «parry» y se usa «traslación» para blink. Los nombres propios se mantienen cuando corresponde. El glosario está en `traduccion/glosario.json`.
 
 ## Contenido y mantenimiento
 
