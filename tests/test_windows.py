@@ -1,5 +1,6 @@
 """Prueba PowerShell 5.1 en Windows; admite pwsh para validar el motor en Linux."""
 import argparse
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -38,7 +39,12 @@ def main(powershell):
                        '-Carpeta', str(game), '-RaizRespaldos', str(backup)]
             if restore:
                 command.append('-Restaurar')
-            result = subprocess.run(command, capture_output=True, text=True)
+            environment = os.environ.copy()
+            # PowerShell 7 exporta rutas de modulos incompatibles con Windows PowerShell 5.1.
+            # Un doble clic desde Explorer usa las rutas predeterminadas de Windows.
+            if os.name == 'nt':
+                environment.pop('PSModulePath', None)
+            result = subprocess.run(command, capture_output=True, text=True, env=environment)
             if (result.returncode == 0) != success:
                 raise AssertionError(result.stdout + result.stderr)
 

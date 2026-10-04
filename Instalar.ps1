@@ -10,7 +10,11 @@ function Hash-Bytes([byte[]]$Datos) {
     try { return ([BitConverter]::ToString($hash.ComputeHash($Datos))).Replace('-','').ToLowerInvariant() }
     finally { $hash.Dispose() }
 }
-function Hash-File([string]$Ruta) { return (Get-FileHash -LiteralPath $Ruta -Algorithm SHA256).Hash.ToLowerInvariant() }
+function Hash-File([string]$Ruta) {
+    $stream = [IO.File]::OpenRead($Ruta); $hash = [Security.Cryptography.SHA256]::Create()
+    try { return ([BitConverter]::ToString($hash.ComputeHash($stream))).Replace('-','').ToLowerInvariant() }
+    finally { $stream.Dispose(); $hash.Dispose() }
+}
 function Leer-Entrada($Entrada) {
     $stream = $Entrada.Open(); $memory = New-Object IO.MemoryStream
     try { $stream.CopyTo($memory); return ,$memory.ToArray() }
