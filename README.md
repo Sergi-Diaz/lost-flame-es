@@ -4,11 +4,11 @@ Traducción no oficial de Lost Flame al español. Incluye textos, nombres, descr
 
 La traducción se ha realizado con uso de GPT y revisión a mano de montones de casuísticas o nombres peculiares, obviamente es una traducción no profesional y puede haber errores, tenlo en cuenta. 
 
-El repositorio contiene las correcciones de la versión **0.9.10**. El último ZIP publicado es la **0.9.8**; el paquete actualizado está pendiente de publicarse como release.
+La versión actual es la **0.9.10**, disponible en [Releases](https://github.com/Sergi-Diaz/lost-flame-es/releases/latest).
 
 ## Instalación en Windows
 
-1. Descarga **LostFlame-es-0.9.8.zip** desde [la última versión](https://github.com/Sergi-Diaz/lost-flame-es/releases/latest).
+1. Descarga **LostFlame-es-0.9.10.zip** desde [la última versión](https://github.com/Sergi-Diaz/lost-flame-es/releases/latest).
 2. Extrae el ZIP completo y cierra el juego.
 3. Abre **Instalar.cmd** con doble clic.
 4. Si no encuentra el juego, pulsa **Buscar…** y selecciona su carpeta. Puedes localizarla desde Steam: Propiedades → Archivos instalados → Explorar.
