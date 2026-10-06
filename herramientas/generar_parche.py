@@ -56,7 +56,7 @@ def build(original, translated, destination):
                                     operaciones=delta(old, new)))
         if set(source.namelist()) - set(target.namelist()):
             raise ValueError('El generador no admite eliminar entradas del juego.')
-    payload = dict(formato=1, version='0.9.8', steam_appid=856570,
+    payload = dict(formato=1, version='0.9.10', steam_appid=856570,
                    build_referencia='22743398', entradas=entries)
     Path(destination).write_text(json.dumps(payload, ensure_ascii=True, separators=(',', ':')),
                                  encoding='utf-8')

@@ -8453,7 +8453,7 @@
     "id": "skirmishers_description",
     "campo": "text",
     "ocurrencia": 1,
-    "traduccion": "Los enemigos dañados por el arma infligen un {buff}{e:5*item.perceivedEnchant+50}{ench:+5}{tx:%%}{white} menos de daño cuerpo a cuerpo{tx:.}"
+    "traduccion": "Los enemigos dañados por el arma infligen un {buff}{e:5*item.perceivedEnchant+50}{ench:+5}{tx:%%}{white} menos de daño cuerpo a cuerpo."
   },
   {
     "archivo": "texts/texts_descriptions.json",
@@ -14823,7 +14823,7 @@
     "id": "Ivar Level",
     "campo": "text",
     "ocurrencia": 1,
-    "traduccion": "Un olor húmedo a esporas llena tus pulmones. Pero el aire dista mucho de estar quieto."
+    "traduccion": "Un olor a humedad y esporas te llena los pulmones. El aire no está en calma."
   },
   {
     "archivo": "texts/texts_locations.json",

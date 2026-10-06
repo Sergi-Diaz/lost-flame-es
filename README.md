@@ -4,6 +4,8 @@ Traducción no oficial de Lost Flame al español. Incluye textos, nombres, descr
 
 La traducción se ha realizado con uso de GPT y revisión a mano de montones de casuísticas o nombres peculiares, obviamente es una traducción no profesional y puede haber errores, tenlo en cuenta. 
 
+El repositorio contiene las correcciones de la versión **0.9.10**. El último ZIP publicado es la **0.9.8**; el paquete actualizado está pendiente de publicarse como release.
+
 ## Instalación en Windows
 
 1. Descarga **LostFlame-es-0.9.8.zip** desde [la última versión](https://github.com/Sergi-Diaz/lost-flame-es/releases/latest).
@@ -17,6 +19,8 @@ El instalador usa Windows PowerShell y .NET, incluidos en Windows 10 y 11. No re
 Windows está pendiente de una prueba de juego en un equipo real. El instalador solo acepta archivos compatibles con la versión de referencia; si la edición de Windows difiere en alguna entrada modificada, se detendrá sin aplicar cambios. Comunica el aviso completo para añadir compatibilidad.
 
 ## Restaurar y actualizar
+
+Para actualizar desde las versiones 0.9.8 o 0.9.9, abre el instalador de este paquete, pulsa **Restaurar original** y después **Instalar traducción**. Así se recupera el juego de tu respaldo antes de aplicar las nuevas correcciones.
 
 Para quitar la traducción, abre el mismo instalador y pulsa **Restaurar original**. El respaldo permanece en `%LOCALAPPDATA%\LostFlameES\respaldos`, fuera de la carpeta de Steam.
 
@@ -48,7 +52,7 @@ Los respaldos se guardan en `~/.local/share/lost-flame-es/respaldos`. En Linux s
 
 ## Estado y correcciones
 
-La versión 0.9.8 cubre los textos inventariados y se ha probado durante varias partidas en Linux. Todavía pueden aparecer textos o nombres en inglés en avisos generados por el juego. Para comunicar un fallo, abre una [incidencia](https://github.com/Sergi-Diaz/lost-flame-es/issues) con una captura, la frase, dónde aparece, el sistema operativo y la versión del juego y del parche.
+La traducción cubre los textos inventariados y se ha probado durante varias partidas en Linux. La versión 0.9.10 incorpora la redacción ambiental revisada y las correcciones de la 0.9.9: corrige el efecto del gladiador, un marcador visible, los nombres recortados en el inventario y los avisos divididos en palabras; también ajusta una frase ambiental y el término hostigador. Todavía pueden aparecer textos o nombres en inglés en avisos generados por el juego. Para comunicar un fallo, abre una [incidencia](https://github.com/Sergi-Diaz/lost-flame-es/issues) con una captura, la frase, dónde aparece, el sistema operativo y la versión del juego y del parche.
 
 He tratado de usar un español natural y breve, adecuado al tono del juego, aunque en ocasiones he tirado de tenido que tirar de libertad creativa, pero muy pocas. Se conserva «parry» y se usa «traslación» para blink. Los nombres propios se mantienen cuando corresponde. El glosario está en `traduccion/glosario.json`.
 
